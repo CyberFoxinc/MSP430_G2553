@@ -30,7 +30,7 @@ int main(void) {
         _enable_interrupts();
 
         while (gSTART) {
-       	    if (speed < 10) {
+       	    if (gSPEED < 10) {
             gSPEED++;
 	    // delay 0.5s
             __delay_cycles(1000000);
